@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-export default class Work extends Component {
+export default class NotFound extends Component {
   state = { };
 
   render() {
     return (
-      <h1>Work</h1>
+      <h1>Page Not Found</h1>
     );
   }
 }

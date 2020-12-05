@@ -1,0 +1,30 @@
+.about-container {
+  margin-top: 50px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "main main sidebar . "
+    "footer footer footer footer";
+  row-gap: 75px;
+}
+
+.about-header {
+  grid-area: header;
+  margin: auto;
+}
+
+.bio-image-container {
+  grid-area: main;
+}
+
+.bio-image {
+  border-radius: 50%;
+}
+
+.bio-intro {
+  grid-area: sidebar;
+  align-self: center;
+}

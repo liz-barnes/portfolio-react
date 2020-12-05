@@ -1,26 +1,33 @@
 import React, { useState } from 'react';
 import 'firebase/auth';
-import { Link } from 'react-router-dom';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  Nav,
-  NavItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-} from 'reactstrap';
+// import { Link } from 'react-router-dom';
+// import {
+//   Collapse,
+//   Navbar,
+//   NavbarToggler,
+//   Nav,
+//   NavItem,
+//   UncontrolledDropdown,
+//   DropdownToggle,
+//   DropdownMenu,
+//   DropdownItem,
+// } from 'reactstrap';
 // import SearchInput from '../SearchInput';
 
 export default function MyNavbar(props) {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+  // const [isOpen, setIsOpen] = useState(false);
+  // const toggle = () => setIsOpen(!isOpen);
   return (
-    <div>
-      <Navbar color='white' dark expand='md' className='navbar-container justify-content-between'>
-        {/* <Link className="navbar-brand" to='/'>liz barnes</Link> */}
+    <div className="nav-container">
+      <div className="nav-link-container">
+        <ul className="nav-links">
+          <li><a href="/about">about</a></li>
+          <li><a href="/my-work">work</a></li>
+          <li><a href="/contact">contact</a></li>
+        </ul>
+      </div>
+      {/* <Navbar color='white' dark expand='md' className='navbar-container justify-content-between'>
+        <Link className="navbar-brand" to='/'>liz barnes</Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className='mr-auto' navbar>
@@ -37,7 +44,7 @@ export default function MyNavbar(props) {
             </NavItem>
           </Nav>
         </Collapse>
-      </Navbar>
+      </Navbar> */}
     </div>
   );
 }

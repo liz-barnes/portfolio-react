@@ -1,20 +1,42 @@
-a.nav-link {
-  color: black !important;
-  justify-content: center;
-}
+// a.nav-link {
+//   color: black !important;
+//   justify-content: center;
+// }
 
-.navbar-container {
+// .navbar-container {
   
-}
+// }
 
-.navbar-toggler {
-  background-color: $primaryColor;
-}
+// .navbar-toggler {
+//   background-color: $primaryColor;
+// }
 
-.navbar-collapse {
+// .navbar-collapse {
+//   display: flex;
+//   justify-content: center;
+//   // display: flex !important;
+//   // flex-flow: row wrap !important;
+//   // justify-content: center !important;
+// }
+
+.nav-links {
   display: flex;
   justify-content: center;
-  // display: flex !important;
-  // flex-flow: row wrap !important;
-  // justify-content: center !important;
+  margin-top: 50px;
+  list-style-type: none;
+}
+
+.nav-links li a {
+  font-size: 26px;
+  margin: 55px;
+  color: $primaryFontColor;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: $primaryColor;
+}
+
+a:active {
+  color: $primaryColor;
 }
