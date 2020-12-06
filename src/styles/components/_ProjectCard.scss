@@ -86,10 +86,9 @@
 //   margin: 5px;
 // }
 .project-type {
-  font-family: white;
   font-size: 18px;
   font-style: italic;
-
+  font-family: $secondaryFont;
 }
 
 .project-title {
@@ -107,8 +106,15 @@
   // background-color: $primary1;
 }
 
-.project-btn:hover {
-  background-color: #ffffff;
+.view-project-btn {
+  border: 0.5px solid white;
+  color: white;
+  padding: 7px 10px;
+  margin: 5px;
+}
+
+.project-btn:hover, .view-project-btn:hover {
+  background-color: $primaryColor;
 }
 
 a:hover {
