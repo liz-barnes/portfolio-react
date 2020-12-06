@@ -10,7 +10,7 @@ import React from 'react';
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="project-card-container">
+  // <div className="project-card-container">
       <div id={project.firebaseKey} className="project-card-container" style={{ backgroundImage: `url(${project.screenshot})` }}>
         <div class="project-card">
           <div class="hover-content">
@@ -18,13 +18,12 @@ export default function ProjectCard({ project }) {
             <h6 class="project-title">{project.title}</h6>
             <p>{project.description}</p>
             <div class="project-btn-container mt-4">
-              <a href={project.url} rel="noreferrer" target="_blank" class="outline project-btn visit-site-btn" id={project.firebaseKey}>visit site</a>
+              <a className="project-link" href={project.url} rel="noreferrer" target="_blank" class="outline project-btn visit-site-btn" id={project.firebaseKey}>visit site</a>
             </div>
             </div>
         </div>
       </div>
-
-    </div>
+  // </div>
   );
 }
 

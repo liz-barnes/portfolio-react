@@ -73,7 +73,9 @@ export default class Work extends Component {
     return (
       <>
       <h1>Work</h1>
+      <div id="projectsContainer">
       {availableProjects.map((project) => <ProjectCard key={project.id} project={project} />)}
+      </div>
       {/* {projects.filter((project) => project.availabe === true || project.availabe === true)} */}
 
       {/* {projects.map((project) => <ProjectCard key={project.id} project={project} />)} */}
